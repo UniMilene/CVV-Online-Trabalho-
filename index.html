@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body> 
+
+<!-- menu navegação -->
+
+    <nav class="nav">
+        <button class="nav-link" onclick="mudaTab(event, 'sobre')">Sobre</button>
+        <button class="nav-link" onclick="mudaTab(event, 'formacao')">Formação</button>
+        <button class="nav-link" onclick="mudaTab(event, 'portfolio')">Portfólio</button>
+        <button class="nav-link" onclick="mudaTab(event, 'contato')">Contato</button>
+    </nav>
+
+<!-- nome e subtitulo -->
+
+    <header class="hero">
+        <h1>Milene Lugo Montans Pereira</h1>
+        <h2>CVV Online</h2>
+    </header>
+
+<!-- conteudo portofolio -->
+
+        <section id="sobre" class="tabcontent">
+            <h3>Sobre Mim</h3>
+            <p>Tenho 24 anos e interesse ativo por jogos digitais, que começou por volta dos 20 anos. Desde então venho estudando mecânicas como design, narrativa interativa, programação e etc... </p>
+        </section>
+
+        <section id="formacao" class="tabcontent">
+            <h3>Formação Acadêmica</h3>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas com formação técnica em Jogos Digitais. Possuo habilidades em JavaScript, HTML, CSS e frameworks como React.js, além de conhecimentos em design gráfico e UX/UI.</p>
+        </section>
+
+        <section id="portfolio" class="tabcontent">
+            <h3>Portfólio</h3>
+            <p><a href="https://github.com/UniMilene" target="_blank" class="link">Conheça Meu GitHub</a></p>
+        </section>
+
+<!-- aba contato -->
+
+        <section id="contato" class="tabcontent">
+            <h3>Entre em Contato Comigo!</h3>
+            <form>
+                <label>Nome</label>
+                <input type="text" required placeholder="Digite seu nome">
+
+                <label>Email</label>
+                <input type="email" required placeholder="Digite seu e-mail">
+
+                <label>Mensagem</label>
+                <textarea rows="5" required placeholder="Escreva sua mensagem"></textarea>
+
+                <button type="submit">Enviar!</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

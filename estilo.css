@@ -1,0 +1,144 @@
+/* Zerando margens*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centraliza texto*/
+
+body, main, header, section, form {
+    text-align: center;
+}
+
+/* Fonte e cores*/
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* menu navegação*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e24a84;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* botões de navegação*/
+
+.nav-link {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+/* interação com botões*/
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #b8356c;
+    border-radius: 4px;
+}
+
+/* Titulo e subtitulo*/
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff3fa;
+}
+
+/* Titulo*/
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Subtitulo*/
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+/* Conteudo principal*/
+
+main {
+    padding: 2rem;
+}
+
+.tabcontent {
+    display: none;
+    margin-top: 2rem;
+}
+
+/* estilo titulo das seções*/
+
+h3 {
+    font-size: 1.8rem;
+    color: #e24a91;
+    margin-bottom: 1rem;
+}
+
+/* formulario de contato*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* transparencia */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto; /* centraliza */
+}
+
+/* area de mensagem*/
+
+form input,
+form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* botão formulario*/
+
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #e24aa3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: #b83577;
+}
+
+/* personalização de link*/
+
+.link {
+    color: #e24a84;
+    text-decoration: underline;
+}
